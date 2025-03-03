@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erik - Modelador 3D</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Inclusão do model-viewer para exibir modelos 3D interativos -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  
+  <style>
+    /* Exemplo simples para o botão de troca de idioma */
+    #lang-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 0.5rem 1rem;
+      background-color: var(--color-mid-gray);
+      color: var(--color-white);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    #lang-switch:hover {
+      background-color: var(--color-gray);
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">Erik H. Da Silva</div>
+    <div class="tagline">MODELADOR 3D & ARTISTA DIGITAL</div>
+    <!-- Botão de troca de idioma -->
+    <button id="lang-switch" onclick="switchToEnglish()" style="display: inline-flex; align-items: center;">
+        <img src="Banderia.svg" alt="Bandeira" style="width: 24px; height: auto; margin-right: 0.5rem;">
+        English
+      </button>
+
+    
+  </header>
+
+  <!-- Navegação -->
+  <nav>
+    <ul>
+      <li><a href="#sobre">SOBRE</a></li>
+      <li><a href="#projetos">PROJETOS</a></li>
+      <li><a href="#contato">CONTATO</a></li>
+    </ul>
+  </nav>
+
+  <!-- Seção Sobre -->
+  <section id="sobre">
+    <h2 class="section-title">SOBRE MIM</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          Olá! Meu nome é Erik e sou um modelador 3D iniciante, apaixonado por criar objetos digitais. Com 1 ano de experiência, estou focado em aprimorar minhas habilidades na modelagem de objetos para jogos, animações e visualizações. Trabalho com ferramentas como Blender, e estou sempre em busca de novas técnicas e desafios para desenvolver modelos precisos e inovadores.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos">
+    <h2 class="section-title">PROJETOS DESTACADOS</h2>
+    <div class="projects-grid">
+      <!-- Projeto 1 -->
+      <div class="project-card">
+        <div class="project-image">
+          <model-viewer src="/Projects/SoloLevelingSword.glb" 
+                        alt="Katana de lava" 
+                        auto-rotate 
+                        camera-controls 
+                        style="width:100%; height:200px; background-color: var(--color-dark);">
+          </model-viewer>
+        </div>
+        <div class="project-details">
+          <h3 class="project-title">Katana de lava</h3>
+          <p class="project-description">Modelagem feita para fins de treinamento.</p>
+        </div>
+      </div>
+
+      <!-- Projeto 2 -->
+      <div class="project-card">
+        <div class="project-image">
+          <model-viewer src="/Projects/SoloLevelingSword2.glb" 
+                        alt="Adaga de Solo Leveling" 
+                        auto-rotate 
+                        camera-controls 
+                        style="width:100%; height:200px; background-color: var(--color-dark);">
+          </model-viewer>
+        </div>
+        <div class="project-details">
+          <h3 class="project-title">Adaga de Solo Leveling</h3>
+          <p class="project-description">Adaga de Solo Leveling usada pelo protagonista.</p>
+        </div>
+      </div>
+
+      <!-- Projeto 3 -->
+      <div class="project-card">
+        <div class="project-image">
+          <model-viewer src="/Projects/FireSword.glb" 
+                        alt="Espada embuida em chamas" 
+                        auto-rotate 
+                        camera-controls 
+                        style="width:100%; height:200px; background-color: var(--color-dark);">
+          </model-viewer>
+        </div>
+        <div class="project-details">
+          <h3 class="project-title">Espada embuida em chamas</h3>
+          <p class="project-description">Criada por mim com finalidade de treinamento.</p>
+        </div>
+      </div>
+
+      <!-- Projeto 4 -->
+      <div class="project-card">
+        <div class="project-image">
+          <model-viewer src="/Projects/SoloLeveLingDagger.glb" 
+                        alt="Adaga de Solo Leveling" 
+                        auto-rotate 
+                        camera-controls 
+                        style="width:100%; height:200px; background-color: var(--color-dark);">
+          </model-viewer>
+        </div>
+        <div class="project-details">
+          <h3 class="project-title">Adaga de Solo Leveling</h3>
+          <p class="project-description">Adaga de Solo Leveling usada pelo protagonista.</p>
+        </div>
+      </div>
+
+      <!-- Projeto 5 -->
+      <div class="project-card">
+        <div class="project-image">
+          <model-viewer src="/Projects/Gokuzinho.glb" 
+                        alt="Chib Goku" 
+                        auto-rotate 
+                        camera-controls 
+                        style="width:100%; height:200px; background-color: var(--color-dark);">
+          </model-viewer>
+        </div>
+        <div class="project-details">
+          <h3 class="project-title">Chib Goku</h3>
+          <p class="project-description">Primeiro projeto e humanoid feito.</p>
+        </div>
+      </div>
+
+      <!-- Projeto 6 -->
+      <div class="project-card">
+        <div class="project-image">
+          <model-viewer src="/Projects/BolaDeBasquete.glb" 
+                        alt="Bola de basquete" 
+                        auto-rotate 
+                        camera-controls 
+                        style="width:100%; height:200px; background-color: var(--color-dark);">
+          </model-viewer>
+        </div>
+        <div class="project-details">
+          <h3 class="project-title">Bola de basquete</h3>
+          <p class="project-description">Minha primeira modelagem.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section style="text-align: center; "id="contato">
+    <h2 class="section-title">ENTRE EM CONTATO</h2>
+    <p>
+      <a href="https://discord.com/invite/SEU_INVITE_CODE" target="_blank" class="submit-btn" style="text-decoration: none;">
+        ME ADICIONE NO DISCORD
+      </a>
+    </p>
+  </section>
+
+  <!-- Rodapé -->
+  <footer >
+    <div class="social-links">
+      <a href="#">&#9733;</a>
+      <a href="#">&#9733;</a>
+      <a href="#">&#9733;</a>
+    </div>
+    <p>erik@modelador3d.com</p>
+    <p class="copyright">&copy; 2025 Erik - All rights reserved</p>
+    <a id="footer"href="https://www.linkedin.com/in/lucas-almeida-miranda/" class="copyright">
+      Developed by Lucas Miranda Almeida
+    </a>
+  </footer>
+
+  <!-- Script para trocar a linguagem -->
+  <script>
+    function switchToEnglish() {
+      // Cabeçalho
+      document.querySelector('.tagline').textContent = "3D MODELER & DIGITAL ARTIST";
+      
+      // Navegação
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks[0].textContent = "ABOUT";
+      navLinks[1].textContent = "PROJECTS";
+      navLinks[2].textContent = "CONTACT";
+      
+      // Seção Sobre
+      document.querySelector('#sobre .section-title').textContent = "ABOUT ME";
+      document.querySelector('#sobre .about-text p').textContent = "Hello! My name is Erik and I am a beginner 3D modeler, passionate about creating digital objects. With 1 year of experience, I'm focused on improving my skills in modeling objects for games, animations, and visualizations. I work with tools like Blender, and I am always seeking new techniques and challenges to develop precise and innovative models.";
+      
+      // Seção Projetos
+      document.querySelector('#projetos .section-title').textContent = "FEATURED PROJECTS";
+      const projectCards = document.querySelectorAll('.project-card');
+      
+      // Projeto 1
+      projectCards[0].querySelector('.project-title').textContent = "Lava Katana";
+      projectCards[0].querySelector('.project-description').textContent = "Modeling created for training purposes.";
+      // Projeto 2
+      projectCards[1].querySelector('.project-title').textContent = "Solo Leveling Dagger";
+      projectCards[1].querySelector('.project-description').textContent = "Solo Leveling Dagger used by the protagonist.";
+      // Projeto 3
+      projectCards[2].querySelector('.project-title').textContent = "Flaming Sword";
+      projectCards[2].querySelector('.project-description').textContent = "Created by me for training purposes.";
+      // Projeto 4
+      projectCards[3].querySelector('.project-title').textContent = "Solo Leveling Dagger";
+      projectCards[3].querySelector('.project-description').textContent = "Solo Leveling Dagger used by the protagonist.";
+      // Projeto 5
+      projectCards[4].querySelector('.project-title').textContent = "Chibi Goku";
+      projectCards[4].querySelector('.project-description').textContent = "My first project and humanoid model created.";
+      // Projeto 6
+      projectCards[5].querySelector('.project-title').textContent = "Basketball";
+      projectCards[5].querySelector('.project-description').textContent = "My first modeling project.";
+      
+      // Seção Contato
+      document.querySelector('#contato .section-title').textContent = "GET IN TOUCH";
+      document.querySelector('#contato a.submit-btn').textContent = "ADD ME ON DISCORD";
+      
+    
+    }
+  </script>
+</body>
+</html>
